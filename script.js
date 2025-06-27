@@ -178,7 +178,7 @@ function thaydoi(vt) {
         chucai = "phay";
     }
 
-    document.getElementById("image").src = `img/${chucai}.png`;
+    document.getElementById("image").src = `img/${chucai.toLowerCase()}.png`;
 
     let trai = "QWERTASDFGZXCVB";
     let phai = "YUIOPHJKLNM";
