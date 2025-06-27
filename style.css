@@ -1,0 +1,247 @@
+body {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#thoigian {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 1vmin;
+    font-size: 2vmin;
+    width: 75vmin;
+    display: flex;
+    top: 0vmin;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ndluyengo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 2vmin;
+    top: 15vmin;
+    width: 75vmin;
+    height: 12vmin;
+
+}
+
+#dieukhien {
+    top: 2vmin;
+}
+
+#tenbai{
+    font-size: 2vmin;
+}
+
+
+
+.button-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    gap: 1vmin;
+    margin-top: 2vmin;
+
+    width: 75vmin;
+    height: 10vmin;
+
+}
+
+#sapgo {
+    top: 27vmin;
+}
+
+
+
+
+
+#image {
+    margin-top: 10px;
+    width: 75vmin;
+    height: 50vmin;
+}
+
+#image2 {
+    margin-top: 10px;
+    width: 75vmin;
+    height: 50vmin;
+}
+
+
+#d1,
+#d2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 40vmin;
+    left: 50%;
+    width: 75vmin;
+    height: 50vmin;
+
+}
+
+
+
+
+
+#batdau {
+    font-size: 3vmin;
+    /* Tăng cỡ chữ */
+    padding: auto;
+    /* Tăng kích thước nút */
+    width: 15vmin;
+    /* Đặt chiều rộng */
+    height: 10vmin;
+    /* Đặt chiều cao */
+
+}
+
+#b1 {
+    display: flex;
+    /* Sử dụng Flexbox */
+    font-size: 7vmin;
+    padding: auto;
+    width: 10vmin;
+    height: 10vmin;
+
+    background-color: green;
+    font-family: 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bt {
+    display: flex;
+    font-size: 7vmin;
+    padding: auto;
+    width: 7vmin;
+    height: 10vmin;
+    font-family: 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.chucnang {
+    padding: auto;
+    width: 8vmin;
+    height: 8vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chucnang img {
+    width: 100%;
+    /* SVG chiếm toàn bộ chiều rộng */
+    height: 100%;
+    /* SVG chiếm toàn bộ chiều cao */
+    object-fit: contain;
+    /* Đảm bảo SVG không bị méo */
+}
+
+/* toast */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
