@@ -1,1 +1,1 @@
-# go10ngon
+# gõ 10 ngón
